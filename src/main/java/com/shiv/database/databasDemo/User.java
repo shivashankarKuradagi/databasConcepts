@@ -23,7 +23,7 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return "User [/n id=" + id + ", name=" + name + ", location=" + location + ", birthDate=" + birthDate + "]";
+		return "\n\n User [ id=" + id + ", name=" + name + ", location=" + location + ", birthDate=" + birthDate + "]";
 	}
 	@Column(name="NAME", unique=true)
 	private String name;

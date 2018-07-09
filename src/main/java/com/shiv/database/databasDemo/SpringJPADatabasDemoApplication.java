@@ -43,14 +43,14 @@ public class SpringJPADatabasDemoApplication implements CommandLineRunner {
 		dao.createUser(user4);
 		
 	//	logger.info("Find all  : {} ", dao.findAllUser());
-		logger.info("Find by iD  : {} ", dao.findById(1));
+		logger.info("\n Find by iD  : {} ", dao.findById(1));
 		
 		User user = dao.findById(1);
 		
 		user.setLocation("changes Location");
 		dao.updateUser(user);
 		
-		logger.info("all users {} ." , dao.findAllUser());
+		logger.info("\n all users {} ." , dao.findAllUser());
 		
 		// @formatter:off
 		 
